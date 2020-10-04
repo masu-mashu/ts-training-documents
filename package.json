@@ -1,0 +1,30 @@
+{
+  "name": "ts-training-documents",
+  "version": "1.0.0",
+  "description": "TypeScript勉強会資料のGitbook",
+  "main": "index.js",
+  "dependencies": {
+    "gitbook-cli": "^2.3.2",
+    "gitbook-plugin-anchors": "^0.7.1",
+    "gitbook-plugin-collapsible-chapters": "^0.1.8",
+    "gitbook-plugin-expand-active-chapter": "^1.0.0",
+    "gitbook-plugin-hide-published-with": "^1.0.3",
+    "gitbook-plugin-intopic-toc": "^1.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "install": "gitbook install",
+    "serve": "gitbook serve --open",
+    "build": "gitbook build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/masu-mashu/ts-training-documents.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/masu-mashu/ts-training-documents/issues"
+  },
+  "homepage": "https://github.com/masu-mashu/ts-training-documents#readme"
+}
