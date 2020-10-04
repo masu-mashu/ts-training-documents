@@ -6,6 +6,32 @@
 
 ## よく使うテクニック
 
+### 文字へのアクセス
+
+- 文字列は配列のようにアクセスすることができる
+  - charAtで同じことができるがこちらは冗長なので使わない
+
+```javascript
+const word = 'cat';
+console.log(word[1]); /// a
+```
+
+---
+
+### 文字列の結合
+
+- `+`または`+=`を使う
+  - concatなども定義されているが、`+=`の方が圧倒的に速い
+- テンプレート文字列を使うことも多いかも
+  - `` `${word}` ``のように変数埋め込み可能
+
+```javascript
+const word = 'cat';
+const word2 = 'dog';
+console.log(word + ' ' + word2);
+console.log(`${word} ${word2}`);
+```
+
 ### 文字列の大文字化、小文字化
 
 - [String.prototype.toLowerCase](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/String/toLowerCase)
@@ -155,7 +181,7 @@ console.log(Array.from(str));
 
 ---
 
-### 文字列の結合
+### 文字列(配列)からの結合
 
 - [Array.join](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Array/join)
 
@@ -188,3 +214,37 @@ console.log(greeting.trim()); // "Hello world!"
 ```
 
 - 通常、これらの削除はreplaceを使って記述することが多い気がする
+
+---
+
+### 文字列の繰り返し
+
+- [String.prototype.repeat(ES6)](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/String/repeat)
+
+- 同じ文字を繰り返した文字列を作る場合、repeatメソッドを使うのが楽である
+
+```javascript
+console.log('*'.repeat(10));
+// **********
+```
+
+- ただし、**repeatメソッドはES6からなのでES5までを使う場合は別のテクニックを使う必要がある**
+  - Array.joinを使うのが定石(暗記しておくしかないかなと)
+
+```javascript
+console.log(Array(10).join('*'));
+// **********
+```
+
+- 以下の書き方は冗長すぎるので辞める
+  - **1行で書ける内容を変数1つ作って、5行も書けてやる必要は無い**
+  - **冗長なfor文を使わないこと**は徹底するべき
+    - 正直javascriptで普通のfor文は書かない
+
+```javascript
+let str = '';
+for (let i = 0; i < 10; i += 1) {
+  str += '*';
+}
+console.log(str);
+```
