@@ -108,3 +108,5 @@ dist
 
 # Gitbook
 /_book
+
+.DS_Store

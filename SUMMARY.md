@@ -1,16 +1,8 @@
 # Summary
 
 - [JavaScript]()
-  - [String](src/javascript/string/main.md)
-- [GitBook]()
+  - [文字列](src/javascript/string/main.md)
+    - [基礎](src/javascript/string/tutorial.md)
+    - [文字コード](src/javascript/string/char-code.md)
+- [GitBook]() 
   - [環境構築](README.md)
-
-<!-- [](
-- [TypeScript](src/typescript/typescript.md)
-- [HTML](src/html/html.md)
-- [CSS](src/css/css.md)
-- [Angular](src/angular/angular.md)
-- [NestJS](src/nestjs/nestjs.md)
-- [MySQL](src/mysql/mysql.md)
-- [NoSQL](src/nosql/nosql.md) 
-) -->
