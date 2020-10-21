@@ -2,6 +2,7 @@
 
 - [JavaScript]()
   - [String](src/javascript/string/main.md)
+  - [Object](src/javascript/object/main.md)
 - [GitBook]()
   - [環境構築](README.md)
 
