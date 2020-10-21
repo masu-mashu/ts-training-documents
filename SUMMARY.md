@@ -2,6 +2,7 @@
 
 - [JavaScript]()
   - [String](src/javascript/string/main.md)
+  - [Array](src/javascript/array/main.md)
 - [GitBook]()
   - [環境構築](README.md)
 
@@ -12,5 +13,5 @@
 - [Angular](src/angular/angular.md)
 - [NestJS](src/nestjs/nestjs.md)
 - [MySQL](src/mysql/mysql.md)
-- [NoSQL](src/nosql/nosql.md) 
+- [NoSQL](src/nosql/nosql.md)
 ) -->
